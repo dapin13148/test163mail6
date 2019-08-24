@@ -35,7 +35,7 @@ public class TestBrowser {
             System.setProperty("webdriver.chrome.driver", "D:\\¹¤¾ß²å¼þ\\chromedriver.exe");
             driver = new ChromeDriver(); 
         }
-        driver.manage().window().maximize();        
+        driver.manage().window().maximize();   //     
   }
   
     
