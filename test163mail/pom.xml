@@ -5,14 +5,16 @@
   <artifactId>test163mail</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>test163mail Maven Webapp</name>
+  <name>test163mail Maven Webapp2</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  
+      <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 	<dependency>
-	    <groupId>org.testng</groupId>
-	    <artifactId>testng</artifactId>
-	    <version>6.14.3</version>
-	    <scope>test</scope>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.1</version>
+	    <scope>provided</scope>
 	</dependency>
 
 	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
@@ -22,17 +24,30 @@
 	    <version>1.2.16</version>
 	</dependency>
 
-
-
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
-	    <groupId>javax.servlet</groupId>
-	    <artifactId>javax.servlet-api</artifactId>
-	    <version>4.0.1</version>
-	    <scope>provided</scope>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>6.14.3</version>
+	    <scope>test</scope>
 	</dependency>
+
+
+	
   </dependencies>
   <build>
     <finalName>test163mail</finalName>
+        <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-surefire-plugin</artifactId>
+       <version>2.18.1</version>
+       <configuration>
+         <includes>
+           <include>Sample.java</include>
+         </includes>
+       </configuration>
+     </plugin>
+   </plugins>
   </build>
 </project>

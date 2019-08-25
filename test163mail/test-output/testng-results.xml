@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27189" started-at="2019-08-20T18:56:03Z" finished-at="2019-08-20T18:56:31Z">
+  <suite name="Suite" duration-ms="13623" started-at="2019-08-25T10:52:00Z" finished-at="2019-08-25T10:52:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27189" started-at="2019-08-20T18:56:03Z" finished-at="2019-08-20T18:56:31Z">
+    <test name="Test" duration-ms="13623" started-at="2019-08-25T10:52:00Z" finished-at="2019-08-25T10:52:13Z">
       <class name="package01.SendMail3">
-        <test-method status="PASS" signature="openChrome()[pri:0, instance:package01.SendMail3@ff5b51f]" name="openChrome" is-config="true" duration-ms="12043" started-at="2019-08-20T18:56:03Z" finished-at="2019-08-20T18:56:15Z">
+        <test-method status="PASS" signature="openChrome()[pri:0, instance:package01.SendMail3@ff5b51f]" name="openChrome" is-config="true" duration-ms="6999" started-at="2019-08-25T10:52:00Z" finished-at="2019-08-25T10:52:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method status="PASS" signature="sendMail()[pri:0, instance:package01.SendMail3@ff5b51f]" name="sendMail" duration-ms="15108" started-at="2019-08-20T18:56:16Z" finished-at="2019-08-20T18:56:31Z">
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:package01.SendMail3@ff5b51f]" name="sendMail" duration-ms="6588" started-at="2019-08-25T10:52:07Z" finished-at="2019-08-25T10:52:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendMail -->
       </class> <!-- package01.SendMail3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
