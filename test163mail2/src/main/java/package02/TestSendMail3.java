@@ -1,4 +1,4 @@
-package package01;
+package package02;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +15,9 @@ import org.testng.annotations.Test;
 
 import log4j.LoggerControler;
 import log4j.LoggerTest;
+import package01.Login2;
 
-public class SendMail3 {
+public class TestSendMail3 {
 	WebDriver driver=null;
 	final static LoggerControler log= LoggerControler.getLogger(LoggerTest.class);
 	@BeforeClass
@@ -30,7 +31,7 @@ public class SendMail3 {
 	
 
 	@Test
-	public void sendMail(){
+	public void main(){
 		Login2 login2=new Login2();
 		login2.login(driver,"dapin13148","abc123789");
 		
